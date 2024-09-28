@@ -1,0 +1,88 @@
+/* *********************************************************************** */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0a192f;
+    font-family: 'Kode Mono', sans-serif;
+    overflow: hidden;
+}
+
+/* *********************************************************************** */
+
+.container {
+    width: 400px;
+    height: 500px;
+    background-color: #0a192f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 #64ffda;
+    color: aquamarine;
+    margin-top: 15px;
+}
+
+/* *********************************************************************** */
+
+h1 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* *********************************************************************** */
+
+.puzzle-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+}
+.tile {
+    background-color: #17263a;
+    color: aquamarine;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 8px 0 #64ffda;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.tile:hover {
+    transform: scale(1.1);
+}
+.tile.empty {
+    background-color: transparent;
+    box-shadow: none;
+    cursor: default;
+}
+
+/* *********************************************************************** */
+
+.message {
+    font-size: larger;
+    margin-top: 20px;
+    text-align: center;
+    color: rgb(38, 220, 38);
+}
+
+/* *********************************************************************** */
+
+button {
+    width: 150px;
+    height: 35px;
+    background-color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-family: 'Kode Mono', sans-serif;
+    cursor: pointer;
+}
+button:hover {
+    box-shadow: 0 0 20px 0 #64ffda;
+}
